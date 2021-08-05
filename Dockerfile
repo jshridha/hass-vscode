@@ -1,4 +1,4 @@
-FROM hassioaddons/vscode-amd64:2.9.1
+FROM ghcr.io/hassio-addons/vscode/amd64:3.6.1
 
 RUN find /etc/cont-init.d/ -type f -not -name 'code-server.sh' -delete && \
     sed -i '/^export HASS_/d' /etc/services.d/code/run && \
